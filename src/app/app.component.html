@@ -1,0 +1,17 @@
+<div class="container">
+  <input [(ngModel)]="inputVal" class="input-val" placeholder="Enter URL or text here" />
+  <button class="generateBtn" (click)="generateQR()">
+    <span class="button-content">Generate QR Code</span>
+  </button>
+</div>
+
+<div class="qr-container" *ngIf="qrdata">
+  <qrcode
+    (qrCodeURL)="onChangeURL($event)"
+    [qrdata]="qrdata"
+    [colorDark]="'#3d3a4e'"
+    [elementType]="'svg'"
+    [width]="500"
+    [errorCorrectionLevel]="'M'">
+  </qrcode>
+</div>

@@ -10,8 +10,9 @@
     (qrCodeURL)="onChangeURL($event)"
     [qrdata]="qrdata"
     [colorDark]="'#3d3a4e'"
-    [elementType]="'svg'"
+    [elementType]="'canvas'"
     [width]="500"
     [errorCorrectionLevel]="'M'">
   </qrcode>
+  <a [href]="qrDownloadLink" download="qrcode" class="downloadBtn">Download</a>
 </div>

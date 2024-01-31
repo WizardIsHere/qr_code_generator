@@ -82,6 +82,25 @@
 /* Generate Button styles ends here*/
 
 
+.downloadBtn {
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+  height: 3rem;
+  margin: 5px;
+  padding: 1rem 2rem;
+  border-radius: 1.5rem;
+  background: #3d3a4e;
+  background-size: 400%;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+.downloadBtn:hover::before {
+  transform: scale(1.2);
+}
+
 /* Optional: Add media queries for responsiveness */
 @media (max-width: 768px) {
   .container {
